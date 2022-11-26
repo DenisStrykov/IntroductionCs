@@ -9,9 +9,8 @@
 
 System.Console.WriteLine("Давай проверим истинность устверждения, что: !(x || y) == !x && !y");
 
-System.Console.Write("Введите значение x: ");
-int x = Convert.ToInt32(Console.ReadLine());
-
-System.Console.Write("Введите значение y: ");
-int y = Convert.ToInt32(Console.ReadLine());
-
+System.Console.WriteLine("x  y    !(x || y)  !x && !y");
+System.Console.WriteLine($"0  0        {Convert.ToInt32(!(false || false))}         {Convert.ToInt32(!false && !false)}");
+System.Console.WriteLine($"0  1        {Convert.ToInt32(!(false || true))}         {Convert.ToInt32(!false && !true)}");
+System.Console.WriteLine($"1  0        {Convert.ToInt32(!(true || false))}         {Convert.ToInt32(!true && !false)}");
+System.Console.WriteLine($"1  1        {Convert.ToInt32(!(true || true))}         {Convert.ToInt32(!true && !true)}");
